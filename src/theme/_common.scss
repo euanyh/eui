@@ -1,0 +1,132 @@
+@import "color";
+@import "mixins";
+
+@each $key, $val in $theme-colors {
+  .bg-#{$key} {
+    --bg-opacity: 1;
+    background-color: rgba($val, var(--bg-opacity)) !important;
+  }
+}
+
+.bg-transparent {
+  --bg-opacity: 1;
+  background-color: transparent !important;
+}
+
+.bg-opacity-10 {
+  --bg-opacity: 0.1;
+}
+
+.bg-opacity-25 {
+  --bg-opacity: 0.25;
+}
+
+.bg-opacity-50 {
+  --bg-opacity: 0.5;
+}
+
+.bg-opacity-75 {
+  --bg-opacity: 0.75;
+}
+
+.bg-opacity-100 {
+  --bg-opacity: 1;
+}
+
+.bg-gradient {
+  --gradient: linear-gradient(180deg, $gray-300, rgba($gray-800, 0));
+  background-image: var(--gradient) !important;
+}
+
+.shadow {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.shadow-none {
+  box-shadow: none !important;
+}
+
+.position-static {
+  position: static !important;
+}
+
+.position-relative {
+  position: relative !important;
+}
+
+.position-absolute {
+  position: absolute !important;
+}
+
+.position-fixed {
+  position: fixed !important;
+}
+
+.position-sticky {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+}
+
+.top-0 {
+  top: 0 !important;
+}
+
+.top-50 {
+  top: 50% !important;
+}
+
+.top-100 {
+  top: 100% !important;
+}
+
+.bottom-0 {
+  bottom: 0 !important;
+}
+
+.bottom-50 {
+  bottom: 50% !important;
+}
+
+.bottom-100 {
+  bottom: 100% !important;
+}
+
+.start-0 {
+  left: 0 !important;
+}
+
+.start-50 {
+  left: 50% !important;
+}
+
+.start-100 {
+  left: 100% !important;
+}
+
+.end-0 {
+  right: 0 !important;
+}
+
+.end-50 {
+  right: 50% !important;
+}
+
+.end-100 {
+  right: 100% !important;
+}
+
+.translate-middle {
+  transform: translate(-50%, -50%) !important;
+}
+
+.translate-middle-x {
+  transform: translateX(-50%) !important;
+}
+
+.translate-middle-y {
+  transform: translateY(-50%) !important;
+}
+
+.clearfix {
+  @include clearfix;
+}

@@ -1,0 +1,12 @@
+@import "color";
+
+@each $key, $val in $theme-colors {
+  .link-#{$key} {
+    color: $val;
+    transition: all 250ms ease-in-out;
+
+    &:hover {
+      color: lighten($val, 20%);
+    }
+  }
+}

@@ -1,5 +1,4 @@
-
-$white:    #fff !default;
+$white: #fff !default;
 $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
@@ -9,35 +8,36 @@ $gray-600: #6c757d !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
-$black:    #000 !default;
-$blue:    saturate(#0d6efd, 100% ) !default;
-$indigo:  saturate(#6610f2, 100% ) !default;
-$purple:  saturate(#6f42c1, 100% ) !default;
-$pink:    saturate(#d63384, 100% ) !default;
-$red:     saturate(#dc3545, 100% ) !default;
-$orange:  saturate(#fd7e14, 100% ) !default;
-$yellow:  saturate(#ffc107, 100% ) !default;
-$green:   saturate(#198754, 100% ) !default;
-$teal:    saturate(#20c997, 100% ) !default;
-$cyan:    saturate(#0dcaf0, 100% ) !default;
+$black: #000 !default;
+$blue: saturate(#0d6efd, 100%) !default;
+$indigo: saturate(#6610f2, 100%) !default;
+$purple: saturate(#6f42c1, 100%) !default;
+$pink: saturate(#d63384, 100%) !default;
+$red: saturate(#dc3545, 100%) !default;
+$orange: saturate(#fd7e14, 100%) !default;
+$yellow: saturate(#ffc107, 100%) !default;
+$green: saturate(#198754, 100%) !default;
+$teal: saturate(#20c997, 100%) !default;
+$cyan: saturate(#0dcaf0, 100%) !default;
 
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
-$success:       $green !default;
-$info:          $cyan !default;
-$warning:       $yellow !default;
-$danger:        $red !default;
-$light:         $gray-100 !default;
-$dark:          $gray-900 !default;
+$primary: $blue !default;
+$secondary: $gray-600 !default;
+$success: $green !default;
+$info: $cyan !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: $gray-100 !default;
+$dark: $gray-900 !default;
 
 $theme-colors: (
-  "primary":    $primary,
-  "secondary":  $secondary,
-  "success":    $success,
-  "info":       $info,
-  "warning":    $warning,
-  "danger":     $danger,
-  "dark":       $dark
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
 ) !default;
 
 $blue-100: lighten($blue, 80%) !default;
