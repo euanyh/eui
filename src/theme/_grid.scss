@@ -1,0 +1,53 @@
+
+.row {
+    padding: .25rem .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.col {
+    clear: both;
+}
+
+@for $i from 1 through 24 {
+    .col-#{$i} {
+        flex: 0 0 auto;
+        width: percentage(calc(1 / 24 * $i));
+    }
+}
+
+.d-flex {
+    border: 1px solid red;
+    width: 100%;
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+.justify-content-start {
+    justify-content: start;
+}
+.justify-content-end {
+    justify-content: end;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+.justify-content-around {
+    justify-content: space-around;
+}
+
+.align-items-center {
+    align-items: center;
+}
+.align-items-start {
+    align-items: flex-start;
+}
+.align-items-end {
+    align-items: flex-end;
+}
+.align-items-stretch {
+    align-items: stretch;
+}
