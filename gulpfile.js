@@ -7,11 +7,11 @@ import gulpSass from 'gulp-sass';
 const sass = gulpSass(dartSass);
 
 gulp.task('scss', function() {
-    return gulp.src('./src/theme/eui.scss')
+    return gulp.src('./src/theme/estyle.scss')
     .pipe(sass())
     .pipe(autoprefixer({cascade: false}))
     .pipe(gulp.dest('lib'))
     .pipe(minify())
-    .pipe(rename('eui.min.css'))
+    .pipe(rename('estyle.min.css'))
     .pipe(gulp.dest('lib'))
 })
